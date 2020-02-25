@@ -9,8 +9,6 @@ const server = new ApolloServer({
 	context: { prisma }
 });
 
-console.log(process.env.PRISMA_ENDPOINT);
-
 server.listen({ port: 4000 }, () =>
 	console.log(`🚀 - Server ready at http://localhost:4000`)
 );
